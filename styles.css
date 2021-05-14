@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Mono);
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: LightCoral;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+main {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.credits {
+  text-align: center;
+  font-weight: 300;
+  stroke: black;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  font-size: 2em;
+  margin-top: 1em;
+}
+p {
+  text-align: center;
+  font-weight: 300;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1.5em;
+  display: block;
+  margin-top: 0.4em;
+}
+.title {
+  font-family: Lato, sans-serif;
+  color: #fff;
+  background-color: rgba(245, 230, 230, 0.377);
+  padding: 10px;
+  font-size: 2.8em;
+}
+/*VENTANA DE CODIGO*/
+.window {
+  width: 50%;
+  background: GhostWhite;
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.w-header {
+  height: 37px;
+  background: Gainsboro;
+  position: relative;
+}
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: Crimson;
+  border-radius: 50%;
+  box-shadow: 15px 0 0 Orange, 30px 0 0 LimeGreen;
+}
+.coding-language {
+  color: DimGrey;
+  font-family: Lato, sans-serif;
+  text-align: right;
+  background: transparent;
+  border: none;
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  height: 21px;
+  padding: 0 1em;
+}
+.window-body {
+  position: relative;
+  height: 300px;
+}
+.code-input,
+.code-output {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  font-family: "PT Mono", monospace;
+  font-size: 0.8rem;
+  background: transparent;
+  white-space: pre-wrap;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+.code-input {
+  margin: 0;
+  color: DimGrey;
+}
+.code-output {
+  pointer-events: none;
+  z-index: 3;
+  margin: 0;
+  overflow-y: auto;
+}
+code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "PT Mono", monospace;
+}

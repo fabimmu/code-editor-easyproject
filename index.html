@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/google-code-prettify/prettify.css"
+    />
+    <script
+      type="text/javascript"
+      src="/google-code-prettify/prettify.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=default;autorun=(true)"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=javascript&amp;skin=default"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
+    <!-- <link href="prism/prism.css" rel="stylesheet" />>-->
+    <title>Editor de Código</title>
+  </head>
+  <body onload="PR.prettyPrint()">
+    <main class="view">
+      <h1 class="title">🛠️ Editor de <> Código</h1>
+
+      <div class="window">
+        <div class="w-header">
+          <div class="buttons"></div>
+          <select class="coding-language">
+            <option value="javascript" selected>JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="php">PHP</option>
+          </select>
+        </div>
+        <div class="window-body">
+          <code class="prettyprint lang-js">
+            <textarea class="code-input"></textarea>
+
+            var nombre = x; generar = () => {}
+          </code>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <div class="credits">Hecho con ❤️ por Fabi Montoya 🌼</div>
+    </main>
+  </body>
+</html>
